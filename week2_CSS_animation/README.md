@@ -1,3 +1,3 @@
-# 2021_cm_frontend_selfStudy
+# WEEK2 CSS 動畫
  
-- [week2_CSS_animation](https://jaosn60810.github.io/2021_cm_frontend_selfStudy/week2_CSS_animation/)
+- [展示](https://jaosn60810.github.io/2021_cm_frontend_selfStudy/week2_CSS_animation/)
