@@ -1,0 +1,113 @@
+.nav__ls {
+  display: flex;
+  background-color: $background-color;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.nav__item {
+  width: 25%;
+  line-height: 3;
+  text-align: center;
+  color: #666;
+  font-size: 1.2rem;
+}
+
+.pic {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pic__item {
+  padding: 15px;
+  width: 25%;
+  box-sizing: border-box;
+  @include pad-h {
+    width: 33.33333%;
+  }
+  @include pad-v {
+    width: 50%;
+  }
+  @include mobile {
+    width: 100%;
+  }
+}
+
+.pic__item > a {
+  text-decoration: none;
+}
+
+.pic__item .img-resp {
+  @include mobile {
+    width: 100%;
+  }
+}
+
+.pic__gutter {
+  position: relative;
+  border: solid 1px #ddd;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.pic__cate {
+  position: absolute;
+  top: -7px;
+  left: -10px;
+  font-size: 12px;
+  color: $pic__cate-color;
+  padding: 5px 10px;
+  border-radius: 3px 3px 3px 0;
+}
+
+.pic__cate::after {
+  z-index: -1;
+  position: absolute;
+  left: -10px;
+  top: 12px;
+  content: "";
+  border: solid 10px transparent;
+}
+
+.pic__item--warning .pic__cate {
+  background-color: $pic__item--warning;
+}
+
+.pic__item--danger {
+  @include mobile {
+    order: -1;
+  }
+}
+
+.pic__item--danger .pic__cate {
+  background-color: $pic__item--danger;
+}
+
+.pic__item--warning .pic__cate::after {
+  border-right-color: $pic__item--warning_tri;
+}
+
+.pic__item--danger .pic__cate::after {
+  border-right-color: $pic__item--danger_tri;
+}
+
+.pic__intro {
+  padding: 15px;
+}
+
+.pic__tit,
+.pic__desc {
+  line-height: 1.5;
+}
+
+.pic__tit {
+  color: $pic__tit-color;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.pic__desc {
+  color: $pic__desc-border-color;
+  font-size: 0.9rem;
+}
