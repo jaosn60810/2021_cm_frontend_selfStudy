@@ -1,5 +1,7 @@
 # demo-router
 
+- [展示](https://jaosn60810.github.io/2021_cm_frontend_selfStudy/week5_router/dist/)
+
 ## Project setup
 ```
 npm install
