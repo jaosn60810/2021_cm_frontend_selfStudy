@@ -1,2 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["img"],{"6c7d":function(t,n,s){"use strict";s.r(n);var e=function(){var t=this,n=t.$createElement,s=t._self._c||n;return s("img",{attrs:{src:"https://picsum.photos/id/684/600/400",alt:""}})},c=[],i=s("2877"),l={},r=Object(i["a"])(l,e,c,!1,null,null,null);n["default"]=r.exports}}]);
-//# sourceMappingURL=img.87805b3c.js.map
