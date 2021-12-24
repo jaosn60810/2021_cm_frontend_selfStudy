@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.2.2/echarts.common.js"
+      integrity="sha512-N7/YXbxqLeAMuDnt4Hc7REEwVmr0KZyf43zqLvJ46h8qwrbT2wioL+Ybn8wPXxBOyzpjDsf5beaKmJmOr49iaQ=="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div style="width: 600px; height: 400px"></div>
+    <script>
+      var mCharts = echarts.init(document.querySelector('div'));
+
+      var option = {
+        xAxis: {
+          type: 'category',
+          data: ['ming', 'red', 'wang'],
+        },
+        yAxis: {
+          type: 'value',
+        },
+        series: [
+          {
+            name: 'english',
+            type: 'bar',
+            data: [70, 92, 87],
+          },
+        ],
+      };
+
+      mCharts.setOption(option);
+    </script>
+  </body>
+</html>

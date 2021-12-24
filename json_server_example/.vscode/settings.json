@@ -1,0 +1,12 @@
+{
+  "liveServer.settings.ignoreFiles": [
+    ".vscode/**",
+    "**/*.scss",
+    "**/*.sass",
+    "**/*.ts",
+    // 設置忽略 db.json 才不會偵測到資料變化就重新整理
+    // 導致資料跑出來後 馬上不見
+    // 設置完後記得關掉 vscode 才會重新載入這個設定
+    "db.json"
+  ]
+}
